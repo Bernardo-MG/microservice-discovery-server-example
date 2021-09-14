@@ -208,12 +208,12 @@
       <!-- =========== DEPENDENCIES VERSIONS ============ -->
       <!-- ============================================== -->
       <aspectj.version>1.9.6</aspectj.version>
-      <bouncycastle.version>1.68</bouncycastle.version>
       <classmate.version>1.5.1</classmate.version>
       <commons.logging.version>1.2</commons.logging.version>
       <glassfish.el>2.2</glassfish.el>
       <guava.version>29.0-jre</guava.version>
       <hamcrest.version>2.2</hamcrest.version>
+      <jersey.version>1.19.4</jersey.version>
       <junit.jupiter.version>5.7.2</junit.jupiter.version>
       <log4j.version>2.14.1</log4j.version>
       <mockito.version>3.11.2</mockito.version>
@@ -223,6 +223,7 @@
       <spring.boot.version>2.5.2</spring.boot.version>
       <spring.cloud.dependencies.version>2020.0.3</spring.cloud.dependencies.version>
       <spring.version>5.3.8</spring.version>
+      <woodstox.version>6.2.3</woodstox.version>
       <!-- ============================================== -->
       <!-- ============== PLUGINS VERSIONS ============== -->
       <!-- ============================================== -->
@@ -438,10 +439,16 @@
          <version>${reactor.version}</version>
       </dependency>
       <dependency>
-         <!-- Bouncy Castle Provider -->
-         <groupId>org.bouncycastle</groupId>
-         <artifactId>bcprov-jdk15on</artifactId>
-         <version>${bouncycastle.version}</version>
+         <!-- Jersey -->
+         <groupId>com.sun.jersey</groupId>
+         <artifactId>jersey-core</artifactId>
+         <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+         <!-- Woodstox -->
+         <groupId>com.fasterxml.woodstox</groupId>
+         <artifactId>woodstox-core</artifactId>
+         <version>${woodstox.version}</version>
       </dependency>
       <!-- ============================================== -->
       <!-- ======= TEST ENVIRONMENT DEPENDENCIES ======== -->
