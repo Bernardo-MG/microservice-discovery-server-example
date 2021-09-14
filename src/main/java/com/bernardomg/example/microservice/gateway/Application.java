@@ -26,7 +26,7 @@ package com.bernardomg.example.microservice.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * Application runnable class. This allows Spring Boot to run the application.
@@ -36,7 +36,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication(exclude = {
         org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration.class })
-@EnableDiscoveryClient
+@EnableEurekaServer
 public class Application {
 
     /**
